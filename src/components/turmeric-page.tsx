@@ -95,9 +95,9 @@ const GALLERY_ROW_1 = [
 ];
 
 const GALLERY_ROW_2 = [
-  { src: '/products/sourcing.jpg', alt: 'Turmeric Sourcing' },
-  { src: '/products/quality-inspection.jpg', alt: 'Quality Inspection' },
-  { src: '/products/supply-chain.jpg', alt: 'Supply Chain' },
+  { src: '/products/turmeric-gal-4.jpg', alt: 'Turmeric Sourcing' },
+  { src: '/products/turmeric-gal-5.jpg', alt: 'Quality Inspection' },
+  { src: '/products/turmeric-gal-6.jpg', alt: 'Supply Chain' },
 ];
 
 const GALLERY_ITEMS = [...GALLERY_ROW_1, ...GALLERY_ROW_2];
