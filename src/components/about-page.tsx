@@ -697,7 +697,7 @@ function OurProducts() {
             <article className="bg-white rounded-2xl border border-border-warm/50 overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col">
               <div className="relative aspect-[5/3] overflow-hidden bg-cream">
                 <img
-                  src="/products/long-pepper-featured.jpg"
+                  src="/about/long-pepper-card.jpg"
                   alt="Indonesian Whole Dried Long Pepper"
                   className="w-full h-full object-cover"
                 />
@@ -731,7 +731,7 @@ function OurProducts() {
             <article className="bg-white rounded-2xl border border-border-warm/50 overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col">
               <div className="relative aspect-[5/3] overflow-hidden bg-cream">
                 <img
-                  src="/products/turmeric-featured.jpg"
+                  src="/about/turmeric-card.jpg"
                   alt="Indonesian Turmeric"
                   className="w-full h-full object-cover"
                 />
