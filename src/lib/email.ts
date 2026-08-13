@@ -1,9 +1,18 @@
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+function getResendClient(): Resend | null {
+  const key = process.env.RESEND_API_KEY;
+  if (!key) return null;
+  return new Resend(key);
+}
 
-const TO_EMAIL = process.env.CONTACT_EMAIL || 'sales@erkaagro.com';
-const FROM_EMAIL = process.env.FROM_EMAIL || 'onboarding@resend.dev';
+function getToEmail(): string {
+  return process.env.CONTACT_EMAIL || 'sales@erkaagro.com';
+}
+
+function getFromEmail(): string {
+  return process.env.FROM_EMAIL || 'onboarding@resend.dev';
+}
 
 export async function sendContactEmail(data: {
   name: string;
@@ -11,11 +20,19 @@ export async function sendContactEmail(data: {
   phone: string;
   message: string;
 }) {
+  const resend = getResendClient();
+  if (!resend) {
+    console.warn('[Contact Email] Skipped: RESEND_API_KEY not set');
+    return;
+  }
+
+  const to = getToEmail();
+  const from = getFromEmail();
   const subject = `[Erka Agro] New Contact Message from ${data.name}`;
 
   await resend.emails.send({
-    from: `Erka Agro Website <${FROM_EMAIL}>`,
-    to: [TO_EMAIL],
+    from: `Erka Agro Website <${from}>`,
+    to: [to],
     replyTo: data.email,
     subject,
     html: `
@@ -47,6 +64,14 @@ export async function sendContactEmail(data: {
 }
 
 export async function sendInquiryEmail(data: Record<string, string>) {
+  const resend = getResendClient();
+  if (!resend) {
+    console.warn('[Inquiry Email] Skipped: RESEND_API_KEY not set');
+    return;
+  }
+
+  const to = getToEmail();
+  const from = getFromEmail();
   const subject = `[Erka Agro] Product Inquiry from ${data.fullName}`;
 
   const fieldLabel: Record<string, string> = {
@@ -74,7 +99,6 @@ export async function sendInquiryEmail(data: Record<string, string>) {
     .map(([key, val]) => {
       const label = fieldLabel[key];
       if (!label || !val) return '';
-      // Combine quantity with unit
       const displayVal = key === 'quantity' && data.quantityUnit
         ? `${val} ${data.quantityUnit}`
         : val;
@@ -86,8 +110,8 @@ export async function sendInquiryEmail(data: Record<string, string>) {
     .join('');
 
   await resend.emails.send({
-    from: `Erka Agro Website <${FROM_EMAIL}>`,
-    to: [TO_EMAIL],
+    from: `Erka Agro Website <${from}>`,
+    to: [to],
     replyTo: data.email,
     subject,
     html: `

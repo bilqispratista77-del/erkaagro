@@ -15,7 +15,6 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Name, email, and phone are required' }, { status: 400 });
     }
 
-    // Save to database (non-blocking, don't fail if DB unavailable)
     import('@/lib/db').then(({ db }) => {
       return db.productInquiry.create({
         data: {
@@ -29,7 +28,6 @@ export async function POST(req: NextRequest) {
       console.error('[Inquiry DB Error]', err?.message || err);
     });
 
-    // Send email notification
     await sendInquiryEmail(body);
 
     return NextResponse.json({ success: true });
