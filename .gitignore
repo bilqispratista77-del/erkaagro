@@ -1,0 +1,55 @@
+# Dependencies
+node_modules
+/.pnp
+.pnp.*
+
+# Next.js
+/.next/
+/out/
+/build
+
+# Database
+/db/*.db
+/db/*.db-journal
+
+# Environment (keep .env.example, ignore the rest)
+.env
+.env.local
+.env.production
+
+# Vercel
+.vercel
+
+# Misc
+.DS_Store
+*.pem
+*.log
+dev.log
+server.log
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+*.tsbuildinfo
+next-env.d.ts
+
+# IDE
+.claude
+.z-ai-config
+
+# Z.ai sandbox (not needed for production)
+/tool-results/
+/upload/
+*.png
+!public/**/*.png
+!public/**/*.jpg
+!public/**/*.svg
+!public/**/*.ico
+
+# Mini services (dev only)
+/mini-services/
+
+# Temp files
+start-dev.sh
+prompt
+test

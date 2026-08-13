@@ -1,0 +1,97 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  /* Erka Agro Color System */
+  --color-forest: #123F2D;
+  --color-forest-dark: #0C3224;
+  --color-gold: #B88A3B;
+  --color-gold-light: #D4A853;
+  --color-ivory: #FAF7F0;
+  --color-cream: #F4EFE5;
+  --color-text-main: #24352E;
+  --color-text-muted: #64716B;
+  --color-border-warm: #E7DED0;
+
+  /* shadcn/ui compatibility */
+  --color-background: var(--ivory);
+  --color-foreground: var(--text-main);
+  --color-primary: var(--forest);
+  --color-primary-foreground: #FFFFFF;
+  --color-secondary: var(--cream);
+  --color-secondary-foreground: var(--text-main);
+  --color-muted: var(--cream);
+  --color-muted-foreground: var(--text-muted);
+  --color-accent: var(--gold);
+  --color-accent-foreground: var(--forest);
+  --color-card: #FFFFFF;
+  --color-card-foreground: var(--text-main);
+  --color-popover: #FFFFFF;
+  --color-popover-foreground: var(--text-main);
+  --color-destructive: oklch(0.577 0.245 27.325);
+  --color-border: var(--border-warm);
+  --color-input: var(--border-warm);
+  --color-ring: var(--forest);
+
+  --font-sans: var(--font-plus-jakarta);
+
+  /* Border radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+
+  /* Animations */
+  --animate-fade-up: fade-up 0.6s ease-out forwards;
+  --animate-fade-up-delay-1: fade-up 0.6s ease-out 0.1s forwards;
+  --animate-fade-up-delay-2: fade-up 0.6s ease-out 0.2s forwards;
+  --animate-fade-up-delay-3: fade-up 0.6s ease-out 0.3s forwards;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-ivory text-text-main;
+    font-feature-settings: 'cv01' 1, 'cv02' 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-warm);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
