@@ -134,7 +134,7 @@ function MobileMenu({
               asChild
               className="w-full bg-forest hover:bg-forest-dark text-white font-bold text-[15px] h-11 rounded-xl transition-colors duration-200"
             >
-              <a href="/#request-quote" onClick={() => setMobileOpen(false)}>
+              <a href="/request-quote" onClick={() => setMobileOpen(false)}>
                 Request a Quote
               </a>
             </Button>

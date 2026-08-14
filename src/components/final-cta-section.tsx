@@ -37,7 +37,7 @@ export function FinalCtaSection() {
                   asChild
                   className="bg-gold hover:bg-gold-light text-white font-bold text-sm px-6 h-11 rounded-xl transition-all duration-200 w-full sm:w-auto"
                 >
-                  <a href="#request-quote">
+                  <a href="/request-quote">
                     Request a Quote
                     <ArrowRight className="size-3.5 ml-2" />
                   </a>

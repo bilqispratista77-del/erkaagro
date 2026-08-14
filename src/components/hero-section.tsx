@@ -50,7 +50,7 @@ export function HeroSection() {
                 asChild
                 className="bg-forest hover:bg-forest-dark text-white font-bold text-base px-7 h-12 rounded-xl transition-all duration-200 [text-shadow:none]"
               >
-                <a href="#request-quote">
+                <a href="/request-quote">
                   Request a Quote
                   <ArrowRight className="size-4" />
                 </a>
