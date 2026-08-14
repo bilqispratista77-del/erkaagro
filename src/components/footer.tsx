@@ -39,6 +39,25 @@ export function Footer() {
               <p className="text-white/35 text-[13px] leading-relaxed italic">
                 Selected Indonesian Spices for Global Markets
               </p>
+              <div className="hidden lg:flex items-center gap-3 mt-4">
+              <a
+                href="https://www.linkedin.com/company/erka-agro"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center size-8 rounded-full bg-white/10 hover:bg-gold/20 text-white/50 hover:text-gold transition-all duration-200"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="size-4" />
+              </a>
+              <a
+                href="https://www.instagram.com/erkaagro"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center size-8 rounded-full bg-white/10 hover:bg-gold/20 text-white/50 hover:text-gold transition-all duration-200"
+                aria-label="Instagram"
+              >
+                <Instagram className="size-4" />
+              </a>
             </div>
 
             {/* Column 2 — Products */}
