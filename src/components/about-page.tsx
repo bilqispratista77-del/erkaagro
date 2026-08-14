@@ -44,6 +44,7 @@ function getServerFalse() { return false; }
 
 const NAV_ITEMS = [
   { label: 'Home', href: '/' },
+  { label: 'About Us', href: '/about' },
   {
     label: 'Products', href: '/products/long-pepper', hasDropdown: true,
     children: [
@@ -51,7 +52,6 @@ const NAV_ITEMS = [
       { label: 'Turmeric', href: '/products/turmeric' },
     ],
   },
-  { label: 'About Us', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ];
 
