@@ -238,7 +238,7 @@ export function Navbar() {
             asChild
             className="bg-forest hover:bg-forest-dark text-white font-bold text-[15px] px-5 h-10 rounded-xl transition-colors duration-200"
           >
-            <a href="/#request-quote">Request a Quote</a>
+            <a href="/request-quote">Request a Quote</a>
           </Button>
         </div>
 
