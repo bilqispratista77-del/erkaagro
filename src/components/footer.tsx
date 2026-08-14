@@ -1,6 +1,6 @@
 'use client';
 
-import { Phone, Mail, Globe, MapPin } from 'lucide-react';
+import { Phone, Mail, Globe, MapPin, Linkedin, Instagram } from 'lucide-react';
 import { FadeIn } from '@/components/fade-in';
 
 const PRODUCT_LINKS = [
