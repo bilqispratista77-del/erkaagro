@@ -956,7 +956,7 @@ function FinalCta() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Button asChild className="bg-forest hover:bg-forest-dark text-white font-bold text-sm px-6 h-11 rounded-xl w-full sm:w-auto">
-              <Link href="/contact">
+              <Link href="/request-quote">
                 Request a Quote
                 <ArrowRight className="size-3.5 ml-2" />
               </Link>
