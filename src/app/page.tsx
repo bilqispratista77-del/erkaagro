@@ -6,7 +6,6 @@ import { ValuePropositionSection } from '@/components/value-proposition-section'
 import { WhyChooseUsSection } from '@/components/why-choose-us-section';
 import { OriginToShipmentSection } from '@/components/origin-to-shipment-section';
 import { QualityCommitmentSection } from '@/components/quality-commitment-section';
-import { RequestQuoteSection } from '@/components/request-quote-section';
 import { FAQSection } from '@/components/faq-section';
 import { FinalCtaSection } from '@/components/final-cta-section';
 import { Footer } from '@/components/footer';
@@ -24,7 +23,6 @@ export default function Home() {
         <WhyChooseUsSection />
         <OriginToShipmentSection />
         <QualityCommitmentSection />
-        <RequestQuoteSection />
         <FAQSection />
         <FinalCtaSection />
       </main>
