@@ -157,7 +157,7 @@ export function FeaturedTurmericSection() {
                   asChild
                   className="bg-forest hover:bg-forest-dark text-white font-bold text-sm px-6 h-11 rounded-xl transition-all duration-200 group/cta w-full sm:w-auto"
                 >
-                  <a href="#request-quote">
+                  <a href="/request-quote">
                     Request Turmeric Quote
                     <ArrowRight className="size-3.5 ml-1.5 transition-transform duration-200 group-hover/cta:translate-x-0.5" />
                   </a>
@@ -174,7 +174,7 @@ export function FeaturedTurmericSection() {
                 </Button>
               </div>
               <a
-                href="#request-quote"
+                href="/request-quote"
                 className="inline-block mt-3 text-text-muted hover:text-forest text-xs sm:text-sm font-medium transition-colors duration-200"
               >
                 Ask About Sample Availability

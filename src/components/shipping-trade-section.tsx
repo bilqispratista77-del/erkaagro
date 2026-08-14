@@ -231,7 +231,7 @@ export function ShippingTradeSection() {
               asChild
               className="bg-forest hover:bg-forest-dark text-white font-bold text-sm px-6 h-11 rounded-xl transition-all duration-200 group/cta w-full sm:w-auto"
             >
-              <a href="#request-quote">
+              <a href="/request-quote">
                 Request Shipping & Trade Quote
                 <ArrowRight className="size-3.5 ml-1.5 transition-transform duration-200 group-hover/cta:translate-x-0.5" />
               </a>
@@ -241,7 +241,7 @@ export function ShippingTradeSection() {
               variant="outline"
               className="border-border-warm text-forest font-bold text-sm px-6 h-11 rounded-xl hover:bg-cream transition-all duration-200 group/sec w-full sm:w-auto"
             >
-              <a href="#request-quote">
+              <a href="/request-quote">
                 Discuss Your Requirements
                 <ArrowRight className="size-3.5 ml-1.5 transition-transform duration-200 group-hover/sec:translate-x-0.5" />
               </a>

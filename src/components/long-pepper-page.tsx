@@ -214,7 +214,7 @@ function ProductHero() {
 
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button asChild className="bg-forest hover:bg-forest-dark text-white font-bold text-sm px-6 h-11 rounded-xl w-full sm:w-auto">
-                  <a href="#request-quote">Request a Quote</a>
+                  <a href="/request-quote">Request a Quote</a>
                 </Button>
                 <Button asChild variant="outline" className="border-border-warm text-forest font-bold text-sm px-6 h-11 rounded-xl hover:bg-cream w-full sm:w-auto">
                   <a
@@ -419,7 +419,7 @@ function SampleCtaSection() {
             Product sample availability can be discussed before a commercial order.
           </p>
           <Button asChild className="bg-forest hover:bg-forest-dark text-white font-bold text-sm px-6 h-11 rounded-xl">
-            <a href="#request-quote">Ask About Sample Availability</a>
+            <a href="/request-quote">Ask About Sample Availability</a>
           </Button>
           <p className="text-text-muted text-xs mt-3 leading-relaxed">
             Sample quantity, courier cost, and delivery arrangements are subject to confirmation.
@@ -505,7 +505,7 @@ function FinalProductCta() {
 
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-3 mb-8">
             <Button asChild className="bg-gold hover:bg-gold-light text-white font-bold text-sm px-6 h-11 rounded-xl w-full sm:w-auto">
-              <a href="#request-quote">Request a Quote</a>
+              <a href="/request-quote">Request a Quote</a>
             </Button>
             <Button asChild variant="outline" className="border-white/20 text-white font-bold text-sm px-6 h-11 rounded-xl hover:bg-white/10 w-full sm:w-auto">
               <a
@@ -568,7 +568,7 @@ function StickyMobileCta() {
     <div className="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-sm border-t border-border-warm px-4 py-3 sm:hidden">
       <div className="flex items-center gap-2.5">
         <Button asChild className="flex-1 bg-forest hover:bg-forest-dark text-white font-bold text-sm h-10 rounded-xl">
-          <a href="#request-quote">Request Quote</a>
+          <a href="/request-quote">Request Quote</a>
         </Button>
         <a
           href="https://wa.me/6285196245196"

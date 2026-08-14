@@ -6,7 +6,7 @@ import { FadeIn } from '@/components/fade-in';
 const PRODUCT_LINKS = [
   { label: 'Long Pepper', href: '/products/long-pepper' },
   { label: 'Turmeric', href: '/products/turmeric' },
-  { label: 'Request a Quote', href: '#request-quote' },
+  { label: 'Request a Quote', href: '/request-quote' },
 ];
 
 const COMPANY_LINKS = [

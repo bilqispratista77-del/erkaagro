@@ -127,7 +127,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
               </a>
             </Button>
             <a
-              href="#request-quote"
+              href="/request-quote"
               className="text-sm font-medium text-text-muted hover:text-forest transition-colors duration-200 text-center sm:text-left"
             >
               Request a Quote

@@ -204,7 +204,7 @@ export function FAQSection() {
               variant="outline"
               className="border-border-warm text-forest font-bold text-sm px-6 h-11 rounded-xl hover:bg-cream transition-all duration-200 group/sec w-full sm:w-auto"
             >
-              <a href="#request-quote">
+              <a href="/request-quote">
                 Request a Quote
                 <ArrowRight className="size-3.5 ml-1.5 transition-transform duration-200 group-hover/sec:translate-x-0.5" />
               </a>
